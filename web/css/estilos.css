@@ -1,0 +1,107 @@
+.header { color: white;}  
+
+.container-fluid { background-color: #a6431b; font-family: 'Roboto Condensed', sans-serif;}
+
+.container-fluid .navbar-nav { color: white;}
+
+.navbar-brand  { font-family: 'Koulen', cursive; font-size: 30px; transition-duration: 1.5s; transition-property: all;   }
+
+.navbar-brand:hover { font-family: 'Koulen', cursive; font-size: 30px; transform: scale(1.1);  }
+
+.btn { color: black; border-color: black; background-color: white;}
+
+.btn:hover {color: white; border-color: white; background-color: black;}
+
+body { font-family: 'Roboto Condensed', sans-serif; background-color: #d0bd8d;}
+
+.index { background-color: #5e7348; width: 50%; margin-right: auto; margin-left: auto; border-radius: 10px; }
+
+.index h1 { text-align: center; margin: 20px; }
+
+.postimp { background-color: #5e7348; width: 50%; margin-right: auto; margin-left: auto; border-radius: 10px;}
+
+.postimp h1 { text-align: center; margin: 20px; }
+
+.carousel-inner img { display:block; margin:auto; margin-top: 20px; } 
+
+.card { display:block; margin: auto; margin-top: 20px; margin-bottom: 20px; background-color: #5e7348; border-radius: 20px;  }
+
+.card1 .card-body { text-align: center;}
+
+.botonindex  { width: 30%; border-radius: 8px; border: 3px solid black; background-color: white; margin-right: auto; margin-left: auto; }
+
+.botonindex a { text-decoration: none; color: black; }
+
+.botonindex:hover { width: 30%; border-radius: 8px; background-color: black; margin-right: auto; margin-left: auto; color: white;  }
+
+.botonindex a:hover { text-decoration: none; color: white; }
+
+.card2 { margin-left: auto; margin-right: auto; }
+
+.card2 .card-body  { text-align: center; }
+
+.card2 img { border: 5px solid #5e7348; transition-duration: 1.5s; transition-property: all;  }
+
+.card2 img:hover { border: 5px solid #5e7348; transform: scale(1.1);  }
+
+.card3 { margin-left: auto; margin-right: auto; }
+
+.card-group { display: flex; justify-content: center; }
+
+.card3 .card-body { text-align: center; }
+
+.card3 img { border: 5px solid #5e7348; transition-duration: 1.5s; transition-property: all; }
+
+.card3 img:hover { border: 5px solid #5e7348; transform: scale(1.1);}
+
+.card-text { background-color: none; }
+
+.card6 { display:block; margin: auto; margin-top: 20px; margin-bottom: 20px; }
+
+.artista1 { background-color: #1b39c1; width: 50%; margin-right: auto; margin-left: auto; border-radius: 10px;}
+
+.artista1 h1 { text-align: center; margin: 20px; }
+
+.artista2 { background-color: #f1bc3c; width: 50%; margin-right: auto; margin-left: auto; border-radius: 10px;}
+
+.artista2 h1 { text-align: center; margin: 20px; }
+
+.artista3 { background-color: #5e7348; width: 50%; margin-right: auto; margin-left: auto; border-radius: 10px;}
+
+.artista3 h1 { text-align: center; margin: 20px; }
+
+.artista4 { background-color: #b04d6f; width: 50%; margin-right: auto; margin-left: auto; border-radius: 10px;}
+
+.artista4 h1 { text-align: center; margin: 20px; }
+
+.card4 { margin-left: auto; margin-right: auto; }
+
+.card4 .card-body { text-align: center; }
+
+.card4 img { border: 5px solid #5e7348; transition-duration: 1.5s; transition-property: all;  }
+
+.card4 img:hover { border: 5px solid #5e7348; transform: scale(1.1);  }
+
+.card5 { border-radius: 8px; border: 10px solid #5e7348; margin-top: 20px;}
+
+.fotocontacto { display: flex; justify-content: center; }
+
+.fotocontacto img { border: 5px solid #5e7348; transition-duration: 1.5s; transition-property: all; width: 30%; margin: auto;}
+
+.fotocontacto img:hover { border: 5px solid #5e7348; transform: scale(1.1); width: 40%;}
+
+h3 { color: black; }
+
+.formu input { width: 60%; border-radius: 8px; border: 3px solid black;  }
+
+.formu2 input { width: 60%; border-radius: 8px; border: 3px solid black;  padding: 10%; text-align: center;}
+
+.boton input { width: 30%; border-radius: 8px; border: 3px solid black; background-color: white; }
+
+.boton input:hover { width: 30%; border-radius: 8px; border: 3px solid white; background-color: black; color: white; }
+
+footer { background-color: #a6431b; color: black; }
+
+
+
+
