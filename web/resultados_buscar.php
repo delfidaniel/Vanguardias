@@ -42,7 +42,7 @@
           <a class="nav-link" href="galeria.html">Galería</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="contacto.html">Contacto</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
       </ul>
       <form class="d-flex" action="resultados_buscar.php" method="post">
@@ -53,53 +53,48 @@
   </div>
 </nav>
     </header>
+
     <section>
-        <div class="postimp"> <h1> Contacto </h1> </div>
-         <div class="fotocontacto"><img src="img/fotog.jpg"> </div>
-  <div class="container mb-3">
-  <div class="row">
-  <div class="col-lg-6 mx-auto">
-    <div class="card5">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-12">
-              <div class="head text-center text-white ">
-                <h3>¡Dejanos tu mensaje!</h3>
-              </div>
-          </div>
-        </div>
-             <div class="form p-3">
-                <div class="form-row text-center">
-                  <form method="POST"> <input type="hidden" name="form-name" value="form 1">
-                    <div class="mt-3 mb-3 formu">
-                        <input type="text" name="nombre" placeholder="Nombre" required="">
-                    </div>
-                    <div class="mb-3 formu">
-                      <input type="text" name="Apellido" placeholder="Apellido" required="">
-                  </div>
-                   <div class="mb-3 formu">
-                        <input type="email" name="email" placeholder="E-mail" required="">
-                    </div>
-                   <div class="mb-3 formu">
-                      <input type="text" name="Asunto" placeholder="Asunto" required="">
-                  </div>
-                    <div class="mb-3 formu2">
-                        <input type="text" name="mensaje" required="" placeholder="Mensaje">
-                    </div>
-                    <div class="form-row">
-                    <div class="boton">
-                        <input type="submit" name="btnenvio" value="Enviar">
-                    </div>
-                </div>
-     </form>
-        
-            </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-</div>
+      <?php
+  include('conexion.php');
+
+  $buscar = $_POST['buscar'];
+  echo "Su consulta: <em>".$buscar."</em><br>";
+
+  $consulta = mysqli_query($conexion, "SELECT * FROM artistas WHERE nombre LIKE '%$buscar%' OR apellido LIKE '%$buscar%' ");
+?>
+
+<article style="width:60%;margin:0 auto; border: 5px solid #5e7348; padding:10px">
+
+      <p>Cantidad de Resultados: 
+  <?php
+    $nros=mysqli_num_rows($consulta);
+    echo $nros;
+  ?>
+  </p>
+
+  <?php
+    while($resultados=mysqli_fetch_array($consulta)) {
+  ?>
+    <p>
+    <?php 
+      echo $resultados['nombre'] . " ";
+      echo $resultados['apellido'] . "<br>";
+      echo $resultados['bio'];
+  ?>
+    </p>
+
+    <img class="img-fluid w-50 h-50" src ="<?php echo $resultados['foto']; ?> "> 
+    <?php
+    }
+
+    mysqli_free_result($consulta);
+    mysqli_close($conexion);
+
+  ?>
+    
+
+</article>
     </section>
 
         <footer>
@@ -121,6 +116,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
