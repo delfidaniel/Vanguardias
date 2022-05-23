@@ -64,7 +64,7 @@
   $consulta = mysqli_query($conexion, "SELECT * FROM artistas WHERE nombre LIKE '%$buscar%' OR apellido LIKE '%$buscar%' ");
 ?>
 
-<article style="width:60%;margin:0 auto; border: 5px solid #5e7348; padding:10px">
+<article style="width:60%;margin:0 auto; border: 5px solid #a6431b; padding:10px; margin-bottom: 10px;">
 
       <p>Cantidad de Resultados: 
   <?php
@@ -84,7 +84,7 @@
   ?>
     </p>
 
-    <img class="img-fluid w-50 h-50" src ="<?php echo $resultados['foto']; ?> "> 
+    <img class="img-fluid w-50 h-50 " src ="<?php echo $resultados['foto']; ?> "> 
     <?php
     }
 
